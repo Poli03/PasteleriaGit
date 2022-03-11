@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pasteleria KIRA</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/Pagina_Inicio.css">
+</head>
+<body>
+<div class="menu">
+    <!-- Logotipo -->
+    <p class="tcenter"><img src="images/Kira_Pasteles.png" alt="Logo pasteleria Kira" width="350px" height="350px" ></p>
+    <p class="tcenter">Pasteleria Kira se pone a usus ordenes para preparar su pastel preferido</p>
+
+    <!-- Tabla de sabores -->
+    <h4 class="tcenter">Sabores</h4>
+    <table>
+        <tr>
+            <th> Limon </th>
+            <th> Vainilla </th>
+            <th> Fresa </th>
+            <th> Chocholate </th>
+        </tr>
+
+        <tr>
+            <td><img src="images/Pastel_Limon_pexels-pixabay-264939.jpg"  width="100px" height="100px" ></td>
+            <td><img src="images/Pastel_Vainilla_pexels-marta-dzedyshko-7421264.jpg"  width="100px" height="100px" ></td>
+            <td><img src="images/Pastel_Fresa_pexels-ronmar-lacamiento-806363.jpg"  width="100px" height="100px" ></td>
+            <td><img src="images/Pastel_chocolate_pexels-polina-tankilevitch-4109998.jpg" width="100px" height="100px" ></td>
+        </tr>
+
+        <tr>
+            <td>$200 </td>
+            <td>$150</td>
+            <td>$180</td>
+            <td>$200</td>
+        </tr>
+    </table>
+
+     <!-- Tabla de figuras -->
+     <h4 class="tcenter">Adornos</h4>
+     <table>
+        <tr>
+            <th> Estrellas </th>
+            <th> Figuras geometricas </th>
+            <th> Numeros </th>
+            <th> Letras </th>
+        </tr>
+
+        <tr class="tcenter">
+            <td><img src="images/Estrella_pexels-asya-vlasova-3525771.jpg"  width="80px" height="80px" ></td>
+            <td><img src="images/Figuras_Geo_pexels-ekaterina-bolovtsova-7307618.jpg"  width="80px" height="80px" ></td>
+            <td><img src="images/Numeros_pexels-magda-ehlers-1329296.jpg"  width="80px" height="80px" ></td>
+            <td><img src="images/Letras_pexels-katya-wolf-8716269.jpg" width="80px" height="80px" ></td>
+        </tr>
+
+        <tr class="tcolor tcenter">
+            <td>$20</td>
+            <td>$15</td>
+            <td>$10</td>
+            <td>$20</td>
+        </tr>
+    </table>
+    <p class="tcolor tcenter">Nota: El precio es por figura, letra o numero.</p><br>
+</div>
+<!-- Formulario-->
+<div class="order tcenter">
+    <form>
+        <br>
+        <p>Nombre: <input type="text" id="name1" name="name1" placeholder="Tu nombre completo"></p>
+        <p>Telefono: <input type="tel" id="tel1" name="tel1" maxlength="10" ></p>
+        <p>Correo: <input type="email" id="email1" name="email1" ></p> <br>
+        <!-- seleccionde figuras y cuantas de 0 a 100-->
+        <h2>Selección de figuras</h2>
+        <input type="checkbox" id="topping1" name="topping1" value="Estrella">
+        <label for="topping1">Estrellas:</label>
+        <input type="number" id="numero1" name="topping1" class="amount" min="0" max="100" value="0"><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Fig_geo">
+        <label for="topping2">Figuras Geometricas:</label>
+        <input type="number" id="numero2" name="topping2" class="amount" min="0" max="100" value="0"><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Numero">
+        <label for="topping3">Numeros:</label>
+        <input type="number" id="numero3" name="topping3" class="amount" min="0" max="100" value="0"><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Letra">
+        <label for="topping3">Letras:</label>
+        <input type="number" id="numero4" name="topping4" class="amount" min="0" max="100" value="0"><br><br>         
+        <h2>Selección de Sabor</h2>
+        <input type="checkbox" id="Limon" name="cake" >
+        <label for="Limon">Limon</label>
+        <input type="checkbox" id="Chocolate" name="cake">
+        <label for="Chocolate">Chocolate</label>
+        <input type="checkbox" id="Fresa" name="cake">
+        <label for="Fresa">Fresa</label>
+        <input type="checkbox" id="Vainilla" name="cake">
+        <label for="Vainilla">Vainilla</label><br><br>
+        <textarea name="txflavor" cols="80" rows="10" 
+        placeholder="Especifique la proporcion del sabor y el acomodo de alguna figura" class="descrip"></textarea><br>
+        <p><input type="submit" value="Clic aquí para enviar"></p>
+    </form>
+<br>
+<p>Horario: 10am a 6pm</p>
+<p>Telefono:7212345678</p>
+<p>Direccion: Toluca,Edo.Mex, Mexico</p>
+</div>
+</body>
+</html>

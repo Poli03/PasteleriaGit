@@ -1,0 +1,28 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size:20px;
+    margin: 0%;/*se quito el margen de lapagina completa*/
+}
+body{
+    flex-wrap: wrap;
+}
+h1{
+    font-size:larger;
+}
+
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing:20px;
+    border: #053d00  2px solid;
+}
+div{
+    background-image: url("../images/Fonddo_marmol_pexels-henry-&-co-2341290.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    height: 700px;
+    text-align: center;
+}
